@@ -4,9 +4,9 @@ import "./UserLinks.scss";
 
 class UserLinks extends Component {
   getLinkElements() {
-    const { userLinks2 } = this.props.config;
+    const { userLinks3 } = this.props.config;
     const { labeled } = this.props;
-    return userLinks2.map(link => (
+    return userLinks3.map(link => (
       <Button
         icon={!labeled}
         flat={labeled}
@@ -20,12 +20,12 @@ class UserLinks extends Component {
     ));
   }
   render() {
-    const { userLinks2 } = this.props.config;
-    if (!userLinks2) {
+    const { userLinks3 } = this.props.config;
+    if (!userLinks3) {
       return null;
     }
     return <div className="user-links">{this.getLinkElements()}</div>;
   }
 }
 
-export default UserLinks2;
+export default UserLinks3;
