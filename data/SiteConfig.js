@@ -33,6 +33,11 @@ module.exports = {
       iconClassName: "fa fa-discord"
     },
     {
+      label: "Facebook-messenger",
+      url: "http://m.me/getbits",
+      iconClassName: "fa fa-facebook-messenger"
+    },
+    {
       label: "Twitter",
       url: "https://twitter.com/cipherweb_co",
       iconClassName: "fa fa-twitter"
