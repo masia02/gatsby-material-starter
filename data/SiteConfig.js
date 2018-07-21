@@ -16,10 +16,10 @@ module.exports = {
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "masia02", // Username to display in the author segment.
   userTwitter: "https://twitter.com/masia02", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
+  userLocation: "Japan", // User location to display in the author segment.
   userAvatar: "https://pbs.twimg.com/profile_images/1018145541832638464/N4BshvKV_400x400.jpg", // User avatar to display in the author segment.
   userDescription:
-    "最先端野郎 ETHマイニングしつつOculus、VR AR MR XR Blockchain 暗号資産 BTC NEM Lisk web3 DApps DAO IOTA AI … 分散社会へガラガラポン！ <a href=”http://valu.is/masia02”＞VALU＜/a>", // User description to display in the author segment.
+    "最先端野郎 ETHマイニングしつつOculus、VR AR MR XR Blockchain 暗号資産 BTC NEM Lisk web3 DApps DAO IOTA AI … 分散社会へガラガラポン！", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
@@ -83,6 +83,16 @@ module.exports = {
       label: "Google+",
       url: "https://plus.google.com/+%E9%AB%98%E9%87%8E%E5%8B%9D%E9%80%9A02",
       iconClassName: "fa fa-google"
+    },
+    {
+      label: "Valu",
+      url: "https://valu.is/masia02",
+      iconClassName: "fa fa-vine"
+    }
+    {
+      label: "note",
+      url: "https://note.mu/masia02",
+      iconClassName: "fa fa-sticky-note"
     }
   ],
   copyright: "Copyright © Cipher-Web 2018. " // Copyright string for the footer of the website and RSS feed.
