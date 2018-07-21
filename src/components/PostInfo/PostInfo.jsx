@@ -35,7 +35,7 @@ class PostInfo extends Component {
         </Link>
 
         <div className="dappsurl">
-          <Link to={dappsurl}>
+          <Link to={post.dappsurl}>
             <Button flat secondary iconClassName="fa fa-url">
               ウェブサイトへ
             </Button>
