@@ -73,7 +73,7 @@ module.exports = {
       label: "Instagram",
       url: "https://www.instagram.com/cipher_web/",
       iconClassName: "fa fa-instagram"
-    }
+    },
     {
       label: "Email",
       url: "mailto:masia02@gmail.com",
