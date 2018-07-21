@@ -75,9 +75,9 @@ module.exports = {
       iconClassName: "fa fa-instagram"
     },
     {
-      label: "Email",
-      url: "mailto:masia02@gmail.com",
-      iconClassName: "fa fa-envelope"
+      label: "Google+",
+      url: "https://plus.google.com/+%E9%AB%98%E9%87%8E%E5%8B%9D%E9%80%9A02",
+      iconClassName: "fa fa-google"
     }
   ],
   copyright: "Copyright © Cipher-Web 2018. " // Copyright string for the footer of the website and RSS feed.
