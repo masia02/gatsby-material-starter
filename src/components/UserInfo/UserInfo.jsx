@@ -6,7 +6,7 @@ import Avatar from "react-md/lib/Avatars";
 import FontIcon from "react-md/lib/FontIcons";
 import IconSeparator from "react-md/lib/Helpers/IconSeparator";
 import { Follow } from "react-twitter-widgets";
-import UserLinks from "../UserLinks/UserLinks2";
+import UserLinks from "../UserLinks/UserLinks";
 import "./UserInfo.scss";
 
 class UserInfo extends Component {
@@ -16,7 +16,7 @@ class UserInfo extends Component {
       userName,
       userLocation,
       userDescription,
-      userLinks2,
+      userLinks,
       userTwitter
     } = this.props.config;
     const { expanded } = this.props;
@@ -24,7 +24,7 @@ class UserInfo extends Component {
       <UserLinks config={this.props.config} labeled={expanded} />
     );
     if (!userAvatar && !userName && !userLocation && !userDescription) {
-      if (userLinks2) {
+      if (userLinks) {
         return (
           <Card className="md-grid md-cell md-cell--12 user-info">
             {userLinksElement}
