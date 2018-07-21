@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from "react-md/lib/Buttons";
 import CardTitle from "react-md/lib/Cards/CardTitle";
 import Avatar from "react-md/lib/Avatars";
 import FontIcon from "react-md/lib/FontIcons";
@@ -35,13 +34,15 @@ class PostInfo extends Component {
           />
         </Link>
 
-        <div className="dappsurl">
-          <Link to={post.dappsurl}>
-            <Button flat secondary iconClassName="fa fa-link">
-              ウェブサイトへ
-            </Button>
-          </Link>
-        </div>
+        <Link to={post.dappsurl}>
+          <CardTitle
+            avatar={
+              <Avatar icon={<FontIcon iconClassName="fa fa-link" />} />
+            }
+            title="ウェブサイトへ"
+            subtitle={post.dappsurl}
+          />
+        </Link>
 
       </div>
     );

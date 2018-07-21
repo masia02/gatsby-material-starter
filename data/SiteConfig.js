@@ -80,5 +80,5 @@ module.exports = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2018. Cipher-Web" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © Cipher-Web 2018. " // Copyright string for the footer of the website and RSS feed.
 };
