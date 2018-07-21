@@ -28,4 +28,4 @@ class UserLinks extends Component {
   }
 }
 
-export default UserLinks3;
+export default UserLinks;
