@@ -88,7 +88,7 @@ module.exports = {
       label: "Valu",
       url: "https://valu.is/masia02",
       iconClassName: "fa fa-vine"
-    }
+    },
     {
       label: "note",
       url: "https://note.mu/masia02",
