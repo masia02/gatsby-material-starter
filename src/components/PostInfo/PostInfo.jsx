@@ -14,7 +14,7 @@ class PostInfo extends Component {
     const post = postNode.frontmatter;
     return (
       <div className="post-info">
-        <Link to={post.dappsurl}>
+        <Link to={(post.dappsurl)}>
           <CardTitle
           avatar={
             <Avatar icon={<FontIcon iconClassName="fa fa-link" />} />
