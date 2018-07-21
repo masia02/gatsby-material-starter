@@ -23,16 +23,6 @@ module.exports = {
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
-      label: "GitHub",
-      url: "https://github.com/masia02/gatsby-material-starter",
-      iconClassName: "fa fa-github"
-    },
-    {
-      label: "Facebook-messenger",
-      url: "http://m.me/getbits",
-      iconClassName: "fa fa-comments"
-    },
-    {
       label: "Twitter",
       url: "https://twitter.com/cipherweb_co",
       iconClassName: "fa fa-twitter"
@@ -41,6 +31,11 @@ module.exports = {
       label: "Facebook",
       url: "https://www.facebook.com/cipherweb",
       iconClassName: "fa fa-facebook"
+    },
+    {
+      label: "Facebook-messenger",
+      url: "http://m.me/getbits",
+      iconClassName: "fa fa-comments"
     },
     {
       label: "Instagram",
