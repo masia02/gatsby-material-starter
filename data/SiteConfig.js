@@ -15,7 +15,7 @@ module.exports = {
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "masia02", // Username to display in the author segment.
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userTwitter: "https://twitter.com/masia02", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
   userDescription:
@@ -29,12 +29,12 @@ module.exports = {
     },
     {
       label: "Twitter",
-      url: "https://twitter.com/masia02",
+      url: "https://twitter.com/cipherweb_co",
       iconClassName: "fa fa-twitter"
     },
     {
       label: "Facebook",
-      url: "https://facebook.com/masia02",
+      url: "https://www.facebook.com/cipherweb",
       iconClassName: "fa fa-facebook"
     },
     {
