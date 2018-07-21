@@ -19,7 +19,7 @@ module.exports = {
   userLocation: "North Pole, Earth", // User location to display in the author segment.
   userAvatar: "https://pbs.twimg.com/profile_images/1018145541832638464/N4BshvKV_400x400.jpg", // User avatar to display in the author segment.
   userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+    "最先端野郎 ETHマイニングしつつOculus、VR AR MR XR Blockchain 暗号資産 BTC NEM Lisk web3 DApps DAO IOTA AI … 分散社会へガラガラポン！ VALU http://valu.is/masia02 ", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
