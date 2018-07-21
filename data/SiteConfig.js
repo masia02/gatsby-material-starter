@@ -28,11 +28,6 @@ module.exports = {
       iconClassName: "fa fa-github"
     },
     {
-      label: "Discord",
-      url: "https://discordapp.com/invite/Pd6bsu",
-      iconClassName: "fa fa-discord"
-    },
-    {
       label: "Facebook-messenger",
       url: "http://m.me/getbits",
       iconClassName: "fa fa-facebook-messenger"
@@ -93,6 +88,23 @@ module.exports = {
       label: "note",
       url: "https://note.mu/masia02",
       iconClassName: "fa fa-sticky-note"
+    }
+  ],
+  userLinks3: [
+    {
+      label: "Navigation-apps",
+      url: "http://appfav.net/",
+      iconClassName: "fa fa-navigation-apps"
+    },
+    {
+      label: "Discord",
+      url: "https://discordapp.com/invite/Pd6bsu",
+      iconClassName: "fa fa-cloud-upload-alt"
+    },
+    {
+      label: "Setting",
+      url: "https://note.mu/masia02",
+      iconClassName: "fa fa-cog"
     }
   ],
   copyright: "Copyright © Cipher-Web 2018. " // Copyright string for the footer of the website and RSS feed.
