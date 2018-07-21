@@ -72,10 +72,8 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
-            dappsurl
             tags
             cover
-            icon
             date
           }
         }
