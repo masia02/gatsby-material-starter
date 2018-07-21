@@ -87,7 +87,7 @@ module.exports = {
   ],
   userLinks3: [
     {
-      label: "DApps",
+      label: "My DApps Bookmarks",
       url: "http://appfav.net/",
       iconClassName: "fa fa-th"
     },
