@@ -33,6 +33,15 @@ class PostInfo extends Component {
             subtitle={post.category}
           />
         </Link>
+
+        <div className="dappsurl">
+          <Link to={dappsurl}>
+            <Button flat secondary iconClassName="fa fa-url">
+              ウェブサイトへ
+            </Button>
+          </Link>
+        </div>
+
       </div>
     );
   }

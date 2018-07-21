@@ -28,6 +28,11 @@ module.exports = {
       iconClassName: "fa fa-github"
     },
     {
+      label: "Discord",
+      url: "https://discordapp.com/invite/Pd6bsu",
+      iconClassName: "fa fa-discord"
+    },
+    {
       label: "Twitter",
       url: "https://twitter.com/cipherweb_co",
       iconClassName: "fa fa-twitter"
@@ -37,6 +42,38 @@ module.exports = {
       url: "https://www.facebook.com/cipherweb",
       iconClassName: "fa fa-facebook"
     },
+    {
+      label: "Instagram",
+      url: "https://www.instagram.com/cipher_web/",
+      iconClassName: "fa fa-instagram"
+    },
+    {
+      label: "Youtube",
+      url: "https://www.youtube.com/channel/UCElM54CRdUGHY140tDd4Bgg/",
+      iconClassName: "fa fa-youtube"
+    },
+    {
+      label: "Medium",
+      url: "https://medium.com/cipher-web",
+      iconClassName: "fa fa-medium"
+    }
+  ],
+  userLinks2: [
+    {
+      label: "Twitter",
+      url: "https://twitter.com/masia02",
+      iconClassName: "fa fa-twitter"
+    },
+    {
+      label: "Facebook",
+      url: "https://www.facebook.com/masia02",
+      iconClassName: "fa fa-facebook"
+    },
+    {
+      label: "Instagram",
+      url: "https://www.instagram.com/cipher_web/",
+      iconClassName: "fa fa-instagram"
+    }
     {
       label: "Email",
       url: "mailto:masia02@gmail.com",
