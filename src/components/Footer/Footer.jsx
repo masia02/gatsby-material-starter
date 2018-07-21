@@ -29,7 +29,7 @@ class Footer extends Component {
             </Link>
           </div>
           <div className="based-on">
-        {userLinks ? <UserLinks config={config} labeled /> : null}
+        {userLinks ? <UserLinks config={config} /> : null}
           </div>
         </div>
       </footer>
