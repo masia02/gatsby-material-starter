@@ -14,13 +14,17 @@ class PostInfo extends Component {
     const post = postNode.frontmatter;
     return (
       <div className="post-info">
-        <CardTitle
-          avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
-          title={`Published on ${moment(postNode.fields.date).format(
-            config.dateFormat
-          )}`}
-          subtitle={`${postNode.timeToRead} min read`}
-        />
+        <Link to={post.dappsurl}>
+          <CardTitle
+          avatar={
+            <Avatar icon={<FontIcon iconClassName="fa fa-link" />} />
+          }
+          title="ウェブサイトへ"
+          subtitle={post.dappsurl}
+          />
+        </Link>
+
+
         <Link
           className="category-link"
           to={`/categories/${_.kebabCase(post.category)}`}
@@ -34,15 +38,15 @@ class PostInfo extends Component {
           />
         </Link>
 
-        <Link to={post.dappsurl}>
-          <CardTitle
-            avatar={
-              <Avatar icon={<FontIcon iconClassName="fa fa-link" />} />
-            }
-            title="ウェブサイトへ"
-            subtitle={post.dappsurl}
-          />
-        </Link>
+
+        <CardTitle
+          avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
+          title={`Published on ${moment(postNode.fields.date).format(
+            config.dateFormat
+          )}`}
+          subtitle={`${postNode.timeToRead} min read`}
+        />
+
 
       </div>
     );
