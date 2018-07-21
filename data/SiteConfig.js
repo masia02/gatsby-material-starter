@@ -92,14 +92,14 @@ module.exports = {
   ],
   userLinks3: [
     {
-      label: "Navigation-apps",
+      label: "DApps",
       url: "http://appfav.net/",
-      iconClassName: "fa fa-navigation-apps"
+      iconClassName: "fa fa-buromobelexperte"
     },
     {
       label: "Discord",
       url: "https://discordapp.com/invite/Pd6bsu",
-      iconClassName: "fa fa-cloud-upload-alt"
+      iconClassName: "fa fa-upload"
     },
     {
       label: "Setting",
