@@ -30,7 +30,7 @@ module.exports = {
     {
       label: "Facebook-messenger",
       url: "http://m.me/getbits",
-      iconClassName: "fa fa-facebook-messenger"
+      iconClassName: "fa fa-comments"
     },
     {
       label: "Twitter",
@@ -94,12 +94,12 @@ module.exports = {
     {
       label: "DApps",
       url: "http://appfav.net/",
-      iconClassName: "fa fa-buromobelexperte"
+      iconClassName: "fa fa-th"
     },
     {
       label: "Discord",
       url: "https://discordapp.com/invite/Pd6bsu",
-      iconClassName: "fa fa-upload"
+      iconClassName: "fa fa-edit"
     },
     {
       label: "Setting",
