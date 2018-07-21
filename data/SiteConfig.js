@@ -14,7 +14,7 @@ module.exports = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
-  userName: "Material User", // Username to display in the author segment.
+  userName: "masia02", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
@@ -33,10 +33,15 @@ module.exports = {
       iconClassName: "fa fa-twitter"
     },
     {
+      label: "Facebook",
+      url: "https://facebook.com/masia02",
+      iconClassName: "fa fa-facebook"
+    },
+    {
       label: "Email",
       url: "mailto:masia02@gmail.com",
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2017. Material User" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2018. Cipher-Web" // Copyright string for the footer of the website and RSS feed.
 };
