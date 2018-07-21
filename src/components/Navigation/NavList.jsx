@@ -15,6 +15,19 @@ function GetNavList(config) {
     }
   ];
 
+  if (config.userLinks3) {
+    config.userLinks3.forEach(link => {
+      NavList.push({
+        primaryText: link.label,
+        leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
+        component: "a",
+        href: link.url
+      });
+    });
+  }
+
+  NavList.push({ divider: true });
+
   if (config.userLinks) {
     config.userLinks.forEach(link => {
       NavList.push({
