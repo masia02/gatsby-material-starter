@@ -9,6 +9,7 @@ class PostListing extends React.Component {
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
+        icon: postEdge.node.frontmatter.icon,
         title: postEdge.node.frontmatter.title,
         dappsurl: postEdge.node.frontmatter.dappsurl,
         date: postEdge.node.fields.date,
