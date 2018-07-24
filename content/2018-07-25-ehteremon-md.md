@@ -4,10 +4,11 @@ date: '2018-07-25T00:40:00+09:00'
 cover: /assets/eyecatch.001-1.jpg
 icon: /assets/3rbarulo_400x400.jpg
 dappsurl: 'http://etheremon.com'
-slug: dapps
+slug: Ehteremon
 category: ethereum
 tags:
-  - ethereum dapps
+  - ethereum
+  - dapps
 ---
 イーサエモンはゲーム3.0の最初のゲームです。イーサエモンを捕獲/育成/進化/交換することができます。
 
