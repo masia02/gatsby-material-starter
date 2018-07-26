@@ -25,6 +25,16 @@ class PostInfo extends Component {
         </Link>
 
 
+        <Link to={post.dappsup}>
+          <CardTitle
+          avatar={
+            <Avatar icon={<FontIcon iconClassName="fa fa-bookmark" />} />
+          }
+          title="マイDAppsリストに追加"
+          subtitle={post.dappsup}
+          />
+        </Link>
+
 
         <Link
           className="category-link"
