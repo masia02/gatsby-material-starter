@@ -98,7 +98,7 @@ module.exports = {
     },
     {
       label: "Setting",
-      url: "https://note.mu/masia02",
+      url: "http://appfav.net/category.html",
       iconClassName: "fa fa-cog"
     }
   ],
