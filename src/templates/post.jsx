@@ -65,7 +65,7 @@ export default class PostTemplate extends React.Component {
         <PostCover
           postNode={postNode}
           coverHeight={coverHeight}
-          coverClassName="md-grid md-cell--12 post-cover"
+          coverClassName="md-grid md-cell--13 post-cover"
           fileEdges={fileEdges}
         />
         <div
