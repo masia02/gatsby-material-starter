@@ -8,8 +8,8 @@ module.exports = {
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: "A GatsbyJS stater with Material design in mind.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  siteGATrackingID: "UA-10252075-10", // Tracking code ID for google analytics.
+  siteFBAppID: "310175872877356", // FB Application ID for using app insights
+  siteGATrackingID: "UA-10252075-11", // Tracking code ID for google analytics.
   disqusShortname: "dapps-list", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
