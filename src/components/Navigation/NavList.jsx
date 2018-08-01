@@ -26,6 +26,17 @@ function GetNavList(config) {
     });
   }
 
+  if (config.userLinks2) {
+    config.userLinks2.forEach(link => {
+      NavList.push({
+        primaryText: link.label,
+        leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
+        component: "a",
+        href: link.url
+      });
+    });
+  }
+
   NavList.push({ divider: true });
 
   if (config.userLinks) {
