@@ -74,7 +74,6 @@ export const pageQuery = graphql`
             title
             tags
             cover
-            dappsurl
             date
           }
         }
