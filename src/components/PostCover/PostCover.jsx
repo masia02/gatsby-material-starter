@@ -25,7 +25,7 @@ class PostCover extends Component {
         <Img
           sizes={coverNodeList[0].node.childImageSharp.sizes}
           outerWrapperClassName={coverClassName}
-          style={{ height: coverHeight, width: "100%" }}
+          style={{ height: coverHeight, width: "80%" }}
         />
       );
     }

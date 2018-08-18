@@ -14,7 +14,26 @@ class PostInfo extends Component {
     const post = postNode.frontmatter;
     return (
       <div className="post-info">
+        <Link to={post.dappsurl}>
+          <CardTitle
+          avatar={
+            <Avatar icon={<FontIcon iconClassName="fa fa-link" />} />
+          }
+          title="ウェブサイトへ"
+          subtitle={post.dappsurl}
+          />
+        </Link>
 
+
+        <Link to={post.dappsup}>
+          <CardTitle
+          avatar={
+            <Avatar icon={<FontIcon iconClassName="fa fa-bookmark" />} />
+          }
+          title="マイDAppsリストに追加"
+          subtitle={post.dappsup}
+          />
+        </Link>
 
 
         <Link
