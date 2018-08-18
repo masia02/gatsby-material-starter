@@ -61,14 +61,6 @@ class PostPreview extends Component {
             </MediaOverlay>
           </Media>
         </Link>
-        <CardTitle
-          expander={expand}
-          avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
-          title={`Published on ${moment(postInfo.date).format(
-            config.dateFormat
-          )}`}
-          subtitle={`${postInfo.timeToRead} min read`}
-        />
 
         <CardText expandable={expand}>
           {postInfo.excerpt}
