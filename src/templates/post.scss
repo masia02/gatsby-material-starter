@@ -1,119 +1,128 @@
-@import '~react-md/src/scss/react-md';
-$phone-status-bar-height: 24px - 12px;
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Card from "react-md/lib/Cards";
+import CardText from "react-md/lib/Cards/CardText";
+import Layout from "../layout";
+import UserInfo from "../components/UserInfo";
+import Disqus from "../components/Disqus";
+import PostTags from "../components/PostTags";
+import PostCover from "../components/PostCover";
+import PostInfo from "../components/PostInfo";
+import SocialLinks from "../components/SocialLinks";
+import PostSuggestions from "../components/PostSuggestions";
+import SEO from "../components/SEO";
+import config from "../../data/SiteConfig";
+import "./b16-tomorrow-dark.css";
+import "./post.scss";
 
-.post-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+export default class PostTemplate extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobile: true
+    };
+    this.handleResize = this.handleResize.bind(this);
+  }
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  handleResize() {
+    if (window.innerWidth >= 640) {
+      this.setState({ mobile: false });
+    } else {
+      this.setState({ mobile: true });
+    }
+  }
+
+  render() {
+    const { mobile } = this.state;
+    const { slug } = this.props.pageContext;
+    const expanded = !mobile;
+    const postOverlapClass = mobile ? "post-overlap-mobile" : "post-overlap";
+    const postNode = this.props.data.markdownRemark;
+    const post = postNode.frontmatter;
+    if (!post.id) {
+      post.id = slug;
+    }
+    if (!post.category_id) {
+      post.category_id = config.postDefaultCategoryID;
+    }
+
+    const coverHeight = mobile ? 180 : 350;
+    return (
+      <Layout location={this.props.location}>
+        <div className="post-page md-grid md-grid--no-spacing">
+          <Helmet>
+            <title>{`${post.title} | ${config.siteTitle}`}</title>
+            <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
+          </Helmet>
+          <SEO postPath={slug} postNode={postNode} postSEO />
+          <PostCover
+            postNode={postNode}
+            coverHeight={coverHeight}
+            coverClassName="md-grid md-cell--9 post-cover"
+          />
+          <div
+            className={`md-grid md-cell--9 post-page-contents mobile-fix ${postOverlapClass}`}
+          >
+            <Card className="md-grid md-cell md-cell--12 post">
+              <CardText className="post-body">
+                <h1 className="md-display-2 post-header">{post.title}</h1>
+                <PostInfo postNode={postNode} />
+                <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+              </CardText>
+              <div className="post-meta">
+                <PostTags tags={post.tags} />
+                <SocialLinks
+                  postPath={slug}
+                  postNode={postNode}
+                  mobile={this.state.mobile}
+                />
+              </div>
+            </Card>
+            <UserInfo
+              className="md-grid md-cell md-cell--12"
+              config={config}
+              expanded={expanded}
+            />
+            <Disqus postNode={postNode} expanded={expanded} />
+          </div>
+
+          <PostSuggestions postNode={postNode} />
+        </div>
+      </Layout>
+    );
+  }
 }
 
-.post-overlap {
-    margin-top: 0px !important;
-    z-index: 2;
-}
-
-.post-overlap-mobile {
-    margin-top: 0px !important;
-    z-index: 2;
-}
-
-.post-page-contents {
-    justify-content: center;
-    width: 100%;
-    max-width: 1040px;
-
-    .gatsby-resp-image-wrapper {
-        z-index: 6 !important;
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      timeToRead
+      excerpt
+      frontmatter {
+        title
+        cover
+        date
+        category
+        tags
+      }
+      fields {
+        nextTitle
+        nextSlug
+        prevTitle
+        prevSlug
+        slug
+        date
+      }
     }
-
-    img {
-        max-width: 100%;
-    }
-
-    video {
-        max-width: 100%;
-    }
-
-    .post-header {
-        margin: 0;
-        max-width: 100%;
-        word-wrap: break-word;
-        white-space: normal;
-    }
-
-    .post {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .post-meta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .post-body {
-            max-width: 100%;
-
-            > h1,
-            > h2,
-            > h3,
-            > h4,
-            > h5,
-            > h6 {
-                margin-top: 30px;
-                margin-bottom: 10px !important;
-            }
-
-            li {
-                margin-top: 15px;
-            }
-
-            /**
-             * Based on MUICSS's Table Component
-             */
-            table {
-                width: 100%;
-                max-width: 100%;
-                margin-bottom: 20px;
-            }
-
-            table > thead > tr > th,
-            table > tbody > tr > th,
-            table > tfoot > tr > th {
-                text-align: left;
-            }
-
-            table > thead > tr > th,
-            table > thead > tr > td,
-            table > tbody > tr > th,
-            table > tbody > tr > td,
-            table > tfoot > tr > th,
-            table > tfoot > tr > td {
-                padding: 10px;
-                line-height: 1.429;
-            }
-
-            table > thead > tr > th {
-                border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-                font-weight: 700;
-            }
-
-            table > tbody + tbody {
-                border-top: 2px solid rgba(0, 0, 0, 0.12);
-            }
-
-            table > tbody > tr > td {
-                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-            }
-
-            :target::before {
-                content: '';
-                display: block;
-                position: relative;
-                height: $md-toolbar-mobile-portrait-height + $phone-status-bar-height;
-                margin: -($md-toolbar-mobile-portrait-height + $phone-status-bar-height) 0 0;
-            }
-        }
-    }
-}
+  }
+`;
