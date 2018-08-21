@@ -147,7 +147,7 @@ export const pageQuery = graphql`
               type
               owner
             }
-            sizes(maxWidth: 1024) {
+            sizes(maxWidth: 1480) {
               ...GatsbyImageSharpSizes
               originalName
             }
