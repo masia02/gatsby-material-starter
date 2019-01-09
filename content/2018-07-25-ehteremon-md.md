@@ -3,7 +3,7 @@ title: Ehteremon
 date: '2018-07-25T00:40:00+09:00'
 cover: /assets/eyecatch.001-1.jpg
 icon: /assets/3rbarulo_400x400.jpg
-dappsurl: 'https://etheremon.com'
+dappsurl: 'https://www.etheremon.com'
 slug: ehteremon
 category: ethereum
 tags:
